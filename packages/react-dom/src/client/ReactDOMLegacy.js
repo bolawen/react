@@ -277,7 +277,7 @@ export function render(
         'more: https://reactjs.org/link/switch-to-createroot',
     );
   }
-
+  console.log('React 源码调试');
   if (!isValidContainerLegacy(container)) {
     throw new Error('Target container is not a DOM element.');
   }
