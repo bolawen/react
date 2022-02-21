@@ -106,7 +106,7 @@ function legacyCreateRootFromDOMContainer(
   container: Container,
   forceHydrate: boolean,
 ): FiberRoot {
-  // First clear any existing content.
+  // 移除根容器下所有 BOM
   if (!forceHydrate) {
     let rootSibling;
     while ((rootSibling = container.lastChild)) {
@@ -144,6 +144,7 @@ function warnOnInvalidCallback(callback: mixed, callerName: string): void {
     }
   }
 }
+
 
 function legacyRenderSubtreeIntoContainer(
   parentComponent: ?React$Component<any, any>,
