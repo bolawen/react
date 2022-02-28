@@ -261,6 +261,7 @@ function resolveLazy(lazyType) {
   return init(payload);
 }
 
+
 // This wrapper function exists because I expect to clone the code in each path
 // to be able to optimize each path individually by branching early. This needs
 // a compiler or we can do it manually. Helpers that don't need this branching

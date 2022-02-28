@@ -818,6 +818,7 @@ export function completeSuspendedOffscreenHostContainer(
   bubbleProperties(workInProgress);
 }
 
+
 function completeWork(
   current: Fiber | null,
   workInProgress: Fiber,

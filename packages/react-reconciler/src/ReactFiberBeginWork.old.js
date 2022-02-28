@@ -274,6 +274,7 @@ if (__DEV__) {
   didWarnAboutDefaultPropsOnFunctionComponent = {};
 }
 
+
 export function reconcileChildren(
   current: Fiber | null,
   workInProgress: Fiber,
@@ -3650,8 +3651,9 @@ function attemptEarlyBailoutIfNoScheduledUpdate(
   return bailoutOnAlreadyFinishedWork(current, workInProgress, renderLanes);
 }
 
+
 function beginWork(
-  current: Fiber | null,
+  current: Fiber | null, 
   workInProgress: Fiber,
   renderLanes: Lanes,
 ): Fiber | null {
